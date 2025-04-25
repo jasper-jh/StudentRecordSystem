@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="651.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentrecordsystem.NotifLogController">
+    <children>
+      <Pane layoutX="6.0" layoutY="6.0" prefHeight="638.0" prefWidth="902.0" style="-fx-background-color: #dbf0ff;">
+         <children>
+            <Pane layoutY="23.0" prefHeight="18.0" prefWidth="889.0" style="-fx-background-color: #90caf9;">
+               <children>
+            
+                                        <Label layoutX="250.0" layoutY="-13.0" style="-fx-background-color: #dbf0ff;" text=" Notification Logs ">
+                     <font>
+                        <Font name="Courier New Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="213.0" layoutY="41.0" prefHeight="130.0" prefWidth="200.0" />
+                 <Label layoutX="28.0" layoutY="586.0" text="Log ID:">
+               <font>
+                  <Font name="Courier New Bold" size="14.0" />
+               </font>
+            </Label>
+                 <TextField fx:id="deleteField" layoutX="89.0" layoutY="572.0" prefHeight="44.0" prefWidth="238.0" promptText="Enter Log ID" style="-fx-border-color: #000000; -fx-border-width: 1; -fx-border-radius: 3;" />
+                 <Button fx:id="deleteButton" layoutX="498.0" layoutY="572.0" onAction="#handleDeleteButtonAction" prefHeight="44.0" prefWidth="149.0" style="-fx-background-color: #90caf9; -fx-border-color: #000000; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 10;" text="Delete Log">
+               <font>
+                  <Font name="Courier New Bold" size="18.0" />
+               </font>
+            </Button>
+                 <Button layoutX="665.0" layoutY="572.0" onAction="#handleBackButtonAction" prefHeight="44.0" prefWidth="223.0" style="-fx-background-color: #90caf9; -fx-border-color: #000000; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 10;" text="Back to Main Menu">
+               <font>
+                  <Font name="Courier New Bold" size="18.0" />
+               </font>
+            </Button>
+              <VBox layoutX="11.0" layoutY="52.0" prefHeight="511.0" prefWidth="889.0" spacing="10.0">
+                  <children>
+      
+                                  <TableView fx:id="notifTable" prefHeight="502.0" prefWidth="869.0" style="-fx-border-color: #90caf9; -fx-border-width: 3;">
+                          <columns>
+                              <TableColumn fx:id="logidColumn" prefWidth="72.00000238418579" text="Log ID" />
+                              <TableColumn fx:id="studentIdColumn" prefWidth="135.9999771118164" text="Student ID" />
+                              <TableColumn fx:id="guardianEmailColumn" prefWidth="354.4000244140625" text="Recipient Email" />
+                              <TableColumn fx:id="dateSentColumn" prefWidth="135.99993896484375" text="Date Sent" />
+                              <TableColumn fx:id="timeSentColumn" prefWidth="168.800048828125" text="Time Sent" />
+                              <TableColumn fx:id="messageColumn" prefWidth="315.199951171875" text="Message Content" />
+                          </columns>
+                      </TableView>
+      
+                              </children>
+                  <padding>
+                      <Insets bottom="10" left="10" right="10" top="10" />
+                  </padding>
+              </VBox>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
