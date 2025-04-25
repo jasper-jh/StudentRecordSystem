@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="425.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentrecordsystem.StudentIDPromptController">
+    <children>
+        <Pane layoutX="9.0" layoutY="11.0" prefHeight="404.0" prefWidth="765.0" style="-fx-background-color: #dbf0ff;">
+            <children>
+                <Pane layoutX="10.0" layoutY="28.0" prefHeight="362.0" prefWidth="745.0" style="-fx-background-color: #dbf0ff; -fx-border-color: #90caf9; -fx-border-width: 5;">
+                    <children>
+                        <Pane layoutX="101.0" layoutY="232.0" prefHeight="61.0" prefWidth="254.0" style="-fx-background-radius: 10; -fx-background-color: #0077b6;" />
+                        <Pane layoutX="391.0" layoutY="233.0" prefHeight="61.0" prefWidth="254.0" style="-fx-background-radius: 10; -fx-background-color: #0077b6;" />
+
+                        <Label layoutX="49.0" layoutY="-27.0" prefHeight="63.0" prefWidth="487.0" style="-fx-background-color: #dbf0ff;" text=" Enter Student ID" textAlignment="CENTER" textFill="#00b4d8">
+                            <font>
+                                <Font name="Verdana Bold Italic" size="48.0" />
+                            </font>
+                        </Label>
+
+                        <TextField fx:id="studentIdField" layoutX="33.0" layoutY="104.0" prefHeight="72.0" prefWidth="680.0" promptText="e.g. 24-1433" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2; -fx-border-color: black;">
+                            <font>
+                                <Font name="Courier New" size="50.0" />
+                            </font>
+                        </TextField>
+
+                        <Button fx:id="sendButton" layoutX="101.0" layoutY="223.0" onAction="#handleSendButtonAction" prefHeight="61.0" prefWidth="254.0" style="-fx-border-color: #1e88e5; -fx-background-color: #ade8f4; -fx-border-radius: 10; -fx-background-radius: 10;" text="SEND">
+                            <font>
+                                <Font name="Courier New Bold" size="18.0" />
+                            </font>
+                        </Button>
+
+                        <Button fx:id="exitButton" layoutX="391.0" layoutY="223.0" onAction="#handleExitButtonAction" prefHeight="61.0" prefWidth="254.0" style="-fx-background-color: #ade8f4; -fx-border-color: #0077b6; -fx-border-radius: 10; -fx-background-radius: 10;" text="EXIT">
+                            <font>
+                                <Font name="Courier New Bold" size="18.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
