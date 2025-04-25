@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="665.0" prefWidth="1003.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="studentrecordsystem.FXMLDocumentController">
+   <children>
+      <Pane layoutX="9.0" layoutY="10.0" prefHeight="650.0" prefWidth="990.0" style="-fx-background-color: #dbf0ff;">
+         <children>
+            <Pane layoutX="14.0" layoutY="41.0" prefHeight="602.0" prefWidth="965.0" style="-fx-border-color: #90caf9; -fx-border-width: 5;">
+               <children>
+                  <Button fx:id="enterStudentIDButton" layoutX="47.0" layoutY="92.0" onAction="#handleStudentIDPrompt" prefHeight="150.0" prefWidth="870.0" style="-fx-background-color: #90caf9; -fx-border-color: #000000; -fx-border-width: 3; -fx-background-radius: 15; -fx-border-radius: 15;" text="Notify Guardian">
+                     <font>
+                        <Font name="Courier New Bold" size="39.0" />
+                     </font>
+                  </Button>
+                  
+                  <Button fx:id="StudManaInfoButton" layoutX="47.0" layoutY="259.0" onAction="#handleStudManaInfo" prefHeight="150.0" prefWidth="870.0" style="-fx-background-color: #90caf9; -fx-background-radius: 15; -fx-border-width: 3; -fx-border-color: #000000; -fx-border-radius: 15;" text="Student Management Information">
+                     <font>
+                        <Font name="Courier New Bold" size="39.0" />
+                     </font>
+                  </Button>
+                  
+                  <Button fx:id="NotifLogButton" layoutX="48.0" layoutY="426.0" onAction="#handleNotifLog" prefHeight="150.0" prefWidth="870.0" style="-fx-background-color: #90caf9; -fx-background-radius: 15; -fx-border-width: 3; -fx-border-color: #000000; -fx-border-radius: 15;" text="View Notifications">
+                     <font>
+                        <Font name="Courier New Bold" size="39.0" />
+                     </font>
+                  </Button>
+                  
+                  <Label layoutX="32.0" layoutY="-29.0" prefHeight="104.0" prefWidth="886.0" style="-fx-background-color: #dbf0ff;" text=" Welcome to S.R.S!" textFill="#a3d5ff">
+                     <font>
+                        <Font name="Verdana Bold Italic" size="80.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="-33.0" prefHeight="104.0" prefWidth="878.0" style="-fx-background-color: transparent;" text=" Welcome to S.R.S!" textFill="#0466c8">
+                     <font>
+                        <Font name="Verdana Bold Italic" size="80.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
+
