@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="210.0" prefWidth="480.0" style="-fx-background-radius: 8;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="35.0" layoutY="67.0" prefHeight="110.0" prefWidth="398.0" style="-fx-background-color: #dbf0ff; -fx-background-radius: 8;">
+         <children>
+            <TextField layoutX="84.0" layoutY="26.0" prefHeight="35.0" prefWidth="115.0" style="-fx-background-color: #dbf0ff;" text="NOtify!">
+               <font>
+                  <Font name="Warpen" size="19.0" />
+               </font>
+            </TextField>
+            <Pane layoutX="10.0" layoutY="6.0" prefHeight="95.0" prefWidth="380.0" style="-fx-background-color: #dbf0ff; -fx-border-width: 5; -fx-border-color: #90caf9; -fx-border-radius: 8;">
+               <children>
+                  <Circle fill="#dbf0ff" layoutX="190.0" radius="34.0" stroke="#90caf9" strokeType="INSIDE" strokeWidth="5.0" style="-fx-blend-mode: #dbf0ff;" />
+                  <Label layoutX="24.0" layoutY="30.0" prefHeight="50.0" prefWidth="331.0" text="Updated Successfully">
+                     <font>
+                        <Font name="Courier New Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="60.0" fitWidth="59.0" layoutX="160.0" layoutY="-30.0">
+                     <image>
+                        <Image url="@../../../../../../Downloads/4992718.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

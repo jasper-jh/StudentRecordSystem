@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="199.0" prefWidth="362.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1">
+   <children>
+      <Pane layoutX="35.0" layoutY="67.0" prefHeight="108.0" prefWidth="278.0" style="-fx-background-color: #dbf0ff;">
+         <children>
+            <TextField layoutX="84.0" layoutY="26.0" prefHeight="35.0" prefWidth="115.0" style="-fx-background-color: #dbf0ff;" text="NOtify!">
+               <font>
+                  <Font name="Warpen" size="19.0" />
+               </font>
+            </TextField>
+            <Pane layoutX="10.0" layoutY="6.0" prefHeight="94.0" prefWidth="257.0" style="-fx-background-color: #dbf0ff; -fx-border-width: 5; -fx-border-color: #90caf9;">
+               <children>
+                  <Circle fill="#dbf0ff" layoutX="128.0" radius="34.0" stroke="#90caf9" strokeType="INSIDE" strokeWidth="5.0" style="-fx-blend-mode: #dbf0ff;" />
+                  <Label layoutX="30.0" layoutY="26.0" prefHeight="68.0" prefWidth="207.0" text="ERROR!">
+                     <font>
+                        <Font name="Courier New Bold" size="57.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="97.0" layoutY="-31.0">
+                     <image>
+                        <Image url="@../../../../../../Downloads/7068033.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
